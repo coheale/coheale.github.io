@@ -10,32 +10,32 @@ myImage.onclick = function() {
     }
 }
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+// let myButton = document.querySelector('button');
+// let myHeading = document.querySelector('h1');
 
 // Sets user's name and uses in welcome prompt
 // --Stores user's name in local storage
-function setUserName() {
-    let myName = prompt('Please enter your name.');
-    if(!myName) {
-        setUserName();
-    } else {
-        localStorage.setItem('name', myName);
-        myHeading.textContent = 'Welcome to my website, ' + myName;
-    }
+// function setUserName() {
+//     let myName = prompt('Please enter your name.');
+//     if(!myName) {
+//         setUserName();
+//     } else {
+//         localStorage.setItem('name', myName);
+//         myHeading.textContent = 'Welcome to my website, ' + myName;
+//     }
     
-}
+// }
 
-if(!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Welcome to my website, ' + storedName;
-}
+// if(!localStorage.getItem('name')) {
+//     setUserName();
+// } else {
+//     let storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'Welcome to my website, ' + storedName;
+// }
 
-myButton.onclick = function() {
-    setUserName();
-}
+// myButton.onclick = function() {
+//     setUserName();
+// }
 
 
 
