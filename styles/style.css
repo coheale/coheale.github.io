@@ -70,3 +70,8 @@ body {
     letter-spacing : 1px;
     list-style: circle;
 }
+
+.email-top-of-homepage {
+    text-align: center;
+    font-size : 20px;
+}
